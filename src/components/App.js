@@ -7,12 +7,12 @@ import ColorPanel from "./ColorPanel/ColorPanel";
 
 import SidePanel from "./SidePanel/SidePanel";
 import Messages from "./Messages/Messages";
-import MetaPanel from "./MetaPanel/MetaPanel";
+// import MetaPanel from "./MetaPanel/MetaPanel";
 //app component
 const App = ({ currentUser, currentChannel, isPrivateChannel }) => (
   <Grid columns="equal" className="app" style={{ background: "#eee" }}>
 
-    <ColorPanel />
+    {/*<ColorPanel />*/}
 
     <SidePanel key={currentUser && currentUser.uid} currentUser={currentUser} />
 
@@ -25,9 +25,9 @@ const App = ({ currentUser, currentChannel, isPrivateChannel }) => (
       />
     </Grid.Column>
 
-    <Grid.Column width={4}>
+    {/*<Grid.Column width={4}>
       <MetaPanel />
-    </Grid.Column>
+</Grid.Column>*/}
   </Grid>
 );
 //mapping to state
